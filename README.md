@@ -1,2 +1,2 @@
 # reactjs-nasa
- Build ReactJS app using NASA API
+ Build a ReactJS app with NASA API
