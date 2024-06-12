@@ -47,5 +47,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-  env:
-    VITE_NASA_API_KEY: ${{ secrets.VITE_NASA_API_KEY }}
+      # Add API key
+      - name: Add API key secret to file
+          env:
+              API_KEY_SECRET: ${{ secrets.VITE_NASA_API_KEY }}
+              run: echo "$VITE_NASA_API_KEY" 
