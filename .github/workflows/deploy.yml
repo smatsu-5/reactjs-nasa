@@ -45,10 +45,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.VITE_NASA_API_KEY }}
           publish_dir: ./dist
-      # Add API key
-      - name: Add API key secret to file
-          env:
-              API_KEY_SECRET: ${{ secrets.VITE_NASA_API_KEY }}
-              run: echo "$VITE_NASA_API_KEY" 
